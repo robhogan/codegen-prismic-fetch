@@ -1,0 +1,29 @@
+{
+  "name": "codegen-prismic-fetch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "A customFetch implementation for using @graphql-codegen with Prismic.io GraphQL APIs",
+  "keywords": [
+    "prismic",
+    "codegen",
+    "graphql",
+    "graphql-codegen",
+    "fetch"
+  ],
+  "dependencies": {
+    "node-fetch": ">=2.0.0"
+  },
+  "author": "Rob Hogan (https://github.com/rh389)",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "files": [
+    "/lib",
+    "/index.js"
+  ]
+}
