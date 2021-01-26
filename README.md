@@ -1,4 +1,5 @@
 # codegen-prismic-fetch
+[![npm version](https://badge.fury.io/js/codegen-prismic-fetch.svg)](https://badge.fury.io/js/codegen-prismic-fetch)
 
 A `customFetch` implementation for using [GraphQL Code Generator](https://graphql-code-generator.com/) with [Prismic CMS](https://prismic.io)
 
