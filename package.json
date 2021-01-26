@@ -1,6 +1,6 @@
 {
   "name": "codegen-prismic-fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "description": "A customFetch implementation for using @graphql-codegen with Prismic.io GraphQL APIs",
