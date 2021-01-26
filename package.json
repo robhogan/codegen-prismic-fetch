@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "description": "A customFetch implementation for using @graphql-codegen with Prismic.io GraphQL APIs",
+  "homepage": "https://github.com/rh389/codegen-prismic-fetch",
+  "bugs": "https://github.com/rh389/codegen-prismic-fetch/issues",
   "keywords": [
     "prismic",
     "codegen",
