@@ -9,8 +9,8 @@ async function codegenFetch(url, options = {}) {
     console.warn(`Warning: ${url} does not look like a prismic URL`);
   }
 
-  const accessToken =
-    process.env.PRISMIC_ACCESS_TOKEN || inferAccessToken(urlObj, options);
+  const inferredAccessToken = inferAccessToken(urlObj, options);
+  const accessToken = process.env.PRISMIC_ACCESS_TOKEN || inferredAccessToken;
 
   let apiUrl = `https://${urlObj.host}/api/v2`;
   if (accessToken) {
@@ -18,6 +18,11 @@ async function codegenFetch(url, options = {}) {
   }
 
   const newOptions = { ...options, headers: { ...(options.headers || {}) } };
+
+  // Token was given as an env var but wasn't present in the request - set it
+  if (accessToken && !inferredAccessToken) {
+    newOptions.headers["Authorization"] = `Token ${accessToken}`;
+  }
 
   newOptions.headers["Prismic-ref"] = await fetchMasterRef(apiUrl);
 
