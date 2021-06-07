@@ -6,7 +6,9 @@ A `customFetch` implementation for using [GraphQL Code Generator](https://graphq
 
 ## Prerequisites
 
-This package helps you connect an existing GraphQL Code Generator setup to an existing Prismic CMS endpoint. Follow the [GraphQL Code Generator getting started guide](https://www.graphql-code-generator.com/docs/getting-started/installation) to set up `graphql-codegen` (and `graphql` itself) with your npm/yarn-based app, and then come back here to get `graphql-codegen` talking to your Prismic endpoint.
+This package helps you connect an existing GraphQL Code Generator setup to an existing Prismic CMS endpoint. 
+
+If you're not familiar with `graphql-codegen`, follow the [GraphQL Code Generator getting started guide](https://www.graphql-code-generator.com/docs/getting-started/installation) to set up `graphql-codegen` (and `graphql` itself) with your npm/yarn-based app, and then come back here to get `graphql-codegen` talking to your Prismic endpoint.
 
 ## Usage
 
