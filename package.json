@@ -14,7 +14,7 @@
     "fetch"
   ],
   "dependencies": {
-    "node-fetch": ">=2.0.0"
+    "node-fetch": "^2.0.0"
   },
   "author": "Rob Hogan (https://github.com/rh389)",
   "devDependencies": {
